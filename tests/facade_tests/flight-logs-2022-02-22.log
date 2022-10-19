@@ -1,0 +1,165 @@
+2022-02-22 11:27:42,333:AnonymousFacade:login:8796:4780:INFO:Administrator 1 just logged in
+2022-02-22 11:27:44,153:FacadeBase:create_new_user:8796:4780:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=2>
+2022-02-22 11:27:44,169:AdministratorFacade:add_airline:8796:4780:INFO:Creating new airline 
+<AirlineCompany_id=3, name=Canada Airline country_id=2, users_id=7>
+2022-02-22 11:27:44,917:AdministratorFacade:add_airline:8796:4780:ERROR:Airline with this name: Delta already exist!
+2022-02-22 11:27:45,665:FacadeBase:create_new_user:8796:4780:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=1>
+2022-02-22 11:27:45,671:AdministratorFacade:add_customer:8796:4780:INFO:Login token: 
+<LoginToken id=1, name=Diana role = Administrator >  creating new customer: 
+<Customer_id=3, first_name=Jane, last_name= Paris, address=Toronto, phone_num=888-666, credit_card_num=3477-222, users_id=7>
+2022-02-22 11:27:46,404:AdministratorFacade:add_customer:8796:4780:ERROR:Login token: 
+<LoginToken id=1, name=Diana role = Administrator > ,Customer with this user id: 1 number already exist
+2022-02-22 11:27:47,122:FacadeBase:create_new_user:8796:4780:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=3>
+2022-02-22 11:27:47,122:AdministratorFacade:add_administrator:8796:4780:INFO:Creating new administrator 
+<Administrator id=None, first_name=Jane last_name= Paris user_id=7>
+2022-02-22 11:27:47,993:AdministratorFacade:add_administrator:8796:4780:ERROR:Object None must be an administrator's instance
+2022-02-22 11:27:48,626:AdministratorFacade:remove_airline:8796:4780:INFO:Removing airline: 
+<AirlineCompany_id=2, name=USA airline country_id=2, users_id=2> and user of this airline: [
+<User id=2 username=DeadPool2 password=22345 email=dead2@pool.com, user_role_id=2>]
+2022-02-22 11:27:49,327:AdministratorFacade:remove_airline:8796:4780:ERROR:Object None must be an airline's instance
+2022-02-22 11:27:50,045:AdministratorFacade:remove_customer:8796:4780:INFO:Removing customer: 
+<Customer_id=2, first_name=Jane, last_name=Paris, address=Toronto, phone_num=876-554, credit_card_num=3477-2020, users_id=4> and his user: [
+<User id=4 username=DeadPool4 password=42345 email=dead4@pool.com, user_role_id=1>]
+2022-02-22 11:27:50,778:AdministratorFacade:remove_customer:8796:4780:ERROR:Object None must be a customer's instance
+2022-02-22 11:27:51,448:AdministratorFacade:remove_administrator:8796:4780:INFO:Removing administrator: 
+<Administrator id=2, first_name=Bob last_name=Dylan user_id=6> and his user: [
+<User id=6 username=DeadPool6 password=62345 email=dead6@pool.com, user_role_id=3>]
+2022-02-22 11:27:56,817:AnonymousFacade:login:10976:4544:INFO:Airline 2 just logged in
+2022-02-22 11:27:57,503:AirlineFacade:update_airline:10976:4544:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Updating airline
+<AirlineCompany_id=2, name=USA airline country_id=1, users_id=2>
+2022-02-22 11:27:58,236:AirlineFacade:add_flight:10976:4544:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Adding flight
+<Flight id=None, airline_company_id=1, origin_country_id=2, destination_country_id=1, departure_time=2022-02-04 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-02-22 11:27:59,139:AirlineFacade:update_flight:10976:4544:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Updating flight
+<Flight id=2, airline_company_id=2, origin_country_id=1, destination_country_id=2, departure_time=2022-02-03 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-02-22 11:27:59,947:AirlineFacade:remove_flight:10976:4544:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Removing my flights
+<Flight id=2, airline_company_id=2, origin_country_id=2, destination_country_id=1, departure_time=2022-02-04 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-02-22 11:28:00,669:AirlineFacade:get_my_flights:10976:4544:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Getting my flights
+2022-02-22 11:28:06,229:AnonymousFacade:login:7728:12220:INFO:Customer 1 just logged in
+2022-02-22 11:28:06,245:AnonymousFacade:login:7728:12220:INFO:Airline 2 just logged in
+2022-02-22 11:28:06,261:AnonymousFacade:login:7728:12220:INFO:Administrator 1 just logged in
+2022-02-22 11:28:06,261:AnonymousFacade:login:7728:12220:ERROR:Username: dfgdgf or password: dfgdfg is wrong!!!
+2022-02-22 11:28:06,276:FacadeBase:create_new_user:7728:12220:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=2>
+2022-02-22 11:28:06,292:AnonymousFacade:add_customer:7728:12220:INFO:Adding customer
+<Customer_id=None, first_name=Jan, last_name= Pier, address=Paris, phone_num=324-567, credit_card_num=5326-1013, users_id=7>
+2022-02-22 11:28:06,330:AnonymousFacade:add_customer:7728:12220:ERROR:Phone number 876-554 must be unique!
+2022-02-22 11:28:06,345:AnonymousFacade:add_customer:7728:12220:ERROR:Phone number 324-567 must be unique!
+2022-02-22 11:30:19,318:AnonymousFacade:add_customer:9460:10372:ERROR:Phone number 324-567 must be unique!
+2022-02-22 11:32:55,329:AnonymousFacade:add_customer:11916:9040:ERROR: Object None must be instance of class customers!
+2022-02-22 11:35:52,753:AnonymousFacade:login:11516:7408:INFO:Customer 1 just logged in
+2022-02-22 11:35:52,769:AnonymousFacade:login:11516:7408:INFO:Airline 2 just logged in
+2022-02-22 11:35:52,784:AnonymousFacade:login:11516:7408:INFO:Administrator 1 just logged in
+2022-02-22 11:35:52,784:AnonymousFacade:login:11516:7408:ERROR:Username: dfgdgf or password: dfgdfg is wrong!!!
+2022-02-22 11:35:52,800:AnonymousFacade:add_customer:11516:7408:ERROR:Phone number 324-567 must be unique!
+2022-02-22 11:35:52,969:AnonymousFacade:add_customer:11516:7408:ERROR:Phone number 876-554 must be unique!
+2022-02-22 11:35:52,985:AnonymousFacade:add_customer:11516:7408:ERROR: Object None must be instance of class customers!
+2022-02-22 11:36:00,491:AnonymousFacade:add_customer:16364:14968:ERROR: Object None must be instance of class customers!
+2022-02-22 11:36:05,392:AnonymousFacade:login:12452:13828:INFO:Customer 1 just logged in
+2022-02-22 11:36:05,407:AnonymousFacade:login:12452:13828:INFO:Airline 2 just logged in
+2022-02-22 11:36:05,423:AnonymousFacade:login:12452:13828:INFO:Administrator 1 just logged in
+2022-02-22 11:36:05,423:AnonymousFacade:login:12452:13828:ERROR:Username: dfgdgf or password: dfgdfg is wrong!!!
+2022-02-22 11:36:05,445:AnonymousFacade:add_customer:12452:13828:ERROR:Phone number 324-567 must be unique!
+2022-02-22 11:36:05,645:AnonymousFacade:add_customer:12452:13828:ERROR:Phone number 876-554 must be unique!
+2022-02-22 11:36:05,677:AnonymousFacade:add_customer:12452:13828:ERROR: Object None must be instance of class customers!
+2022-02-22 11:36:34,342:AnonymousFacade:add_customer:14840:6820:ERROR:Phone number 324-567 must be unique!
+2022-02-22 11:38:48,992:AnonymousFacade:login:10392:15800:INFO:Customer 1 just logged in
+2022-02-22 11:38:49,678:AnonymousFacade:login:10392:15800:INFO:Airline 2 just logged in
+2022-02-22 11:38:50,327:AnonymousFacade:login:10392:15800:INFO:Administrator 1 just logged in
+2022-02-22 11:38:51,028:AnonymousFacade:login:10392:15800:ERROR:Username: dfgdgf or password: dfgdfg is wrong!!!
+2022-02-22 11:38:51,767:FacadeBase:create_new_user:10392:15800:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=2>
+2022-02-22 11:38:51,783:AnonymousFacade:add_customer:10392:15800:INFO:Adding customer
+<Customer_id=None, first_name=Jan, last_name= Pier, address=Paris, phone_num=324-567, credit_card_num=5326-1013, users_id=7>
+2022-02-22 11:38:52,485:AnonymousFacade:add_customer:10392:15800:ERROR:Phone number 876-554 must be unique!
+2022-02-22 11:38:53,202:AnonymousFacade:add_customer:10392:15800:ERROR: Object None must be instance of class customers!
+2022-02-22 11:40:07,430:AnonymousFacade:login:10824:15924:INFO:Customer 1 just logged in
+2022-02-22 11:40:08,147:CustomerFacade:add_ticket:10824:15924:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating remaining tickets for flight: 1
+2022-02-22 11:40:08,147:CustomerFacade:add_ticket:10824:15924:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Adding ticket 
+<Ticket id=None flight_id=1 customer_id=1>
+2022-02-22 11:40:08,896:CustomerFacade:add_ticket:10824:15924:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating remaining tickets for flight: 2
+2022-02-22 11:40:08,896:CustomerFacade:add_ticket:10824:15924:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Adding ticket 
+<Ticket id=None flight_id=2 customer_id=2>
+2022-02-22 11:40:09,651:CustomerFacade:add_ticket:10824:15924:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : try to add ticket with flight id that not exist
+2022-02-22 11:40:10,337:CustomerFacade:add_ticket:10824:15924:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : This unique constraint of customer id: 1 and flight id: 2 already exist
+2022-02-22 11:40:11,001:CustomerFacade:get_my_ticket:10824:15924:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Getting my tickets
+2022-02-22 11:40:11,725:CustomerFacade:remove_ticket:10824:15924:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Object must to be ticket instance!
+2022-02-22 11:40:12,389:CustomerFacade:update_customer:10824:15924:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating customer 
+<Customer_id=1, first_name=Dave, last_name=Green, address=New Jersey, phone_num=185-000, credit_card_num=4580-333, users_id=1>
+2022-02-22 11:40:13,090:CustomerFacade:update_customer:10824:15924:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > :Other customer 
+<Customer_id=2, first_name=Dave, last_name=Green, address=New Jersey, phone_num=185-000, credit_card_num=4580-333, users_id=1> tried to update the parameters
+2022-02-22 11:40:13,830:CustomerFacade:update_customer:10824:15924:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Credit card number 3477-2020 must be unique
+2022-02-22 11:40:14,579:CustomerFacade:get_my_ticket:10824:15924:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Getting my tickets
+2022-02-22 11:46:29,686:AnonymousFacade:login:14892:9660:INFO:Airline 2 just logged in
+2022-02-22 11:46:30,394:AirlineFacade:update_airline:14892:9660:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Airline must be an airline's instance
+2022-02-22 11:50:16,048:AnonymousFacade:login:15052:10380:INFO:Airline 2 just logged in
+2022-02-22 11:50:16,796:AirlineFacade:update_airline:15052:10380:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Other airline(1)tried to update the parameters
+2022-02-22 11:53:55,504:AnonymousFacade:login:1288:2516:INFO:Airline 2 just logged in
+2022-02-22 11:53:56,500:AirlineFacade:update_airline:1288:2516:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :This name(Delta) is not unique!
+2022-02-22 11:53:58,581:AnonymousFacade:login:8848:8740:INFO:Airline 2 just logged in
+2022-02-22 11:53:59,252:AirlineFacade:update_airline:8848:8740:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :This name(Delta) is not unique!
+2022-02-22 11:56:55,758:AnonymousFacade:login:1588:5380:INFO:Airline 2 just logged in
+2022-02-22 11:56:56,491:AirlineFacade:update_airline:1588:5380:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Airline must be an airline's instance
+2022-02-22 11:57:17,723:AnonymousFacade:login:2360:14656:INFO:Airline 2 just logged in
+2022-02-22 11:57:18,408:AirlineFacade:add_flight:2360:14656:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Origin country can't be the same to destination
+2022-02-22 12:13:29,083:AnonymousFacade:login:1580:4200:INFO:Airline 2 just logged in
+2022-02-22 12:13:29,684:AirlineFacade:remove_flight:1580:4200:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Removing my flights
+<Flight id=2, airline_company_id=2, origin_country_id=2, destination_country_id=1, departure_time=2022-02-04 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-02-22 12:14:24,533:AnonymousFacade:login:8940:13324:INFO:Airline 2 just logged in
+2022-02-22 12:14:25,250:AirlineFacade:remove_flight:8940:13324:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Flight must be a flight's instance
+2022-02-22 12:16:04,703:AnonymousFacade:login:11208:12220:INFO:Airline 2 just logged in
+2022-02-22 12:16:39,148:AnonymousFacade:login:9324:6680:INFO:Airline 2 just logged in
+2022-02-22 12:16:39,765:AirlineFacade:get_my_flights:9324:6680:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Getting my flights
+2022-02-22 12:17:20,811:AnonymousFacade:login:9200:11112:INFO:Airline 2 just logged in
+2022-02-22 12:17:21,544:AirlineFacade:update_airline:9200:11112:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Updating airline
+<AirlineCompany_id=2, name=USA airline country_id=1, users_id=2>
+2022-02-22 12:17:22,245:AirlineFacade:update_airline:9200:11112:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Airline must be an airline's instance
+2022-02-22 12:17:22,869:AirlineFacade:update_airline:9200:11112:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Other airline(1)tried to update the parameters
+2022-02-22 12:17:23,502:AirlineFacade:update_airline:9200:11112:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :This name(Delta) is not unique!
+2022-02-22 12:17:24,119:AirlineFacade:add_flight:9200:11112:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Adding flight
+<Flight id=None, airline_company_id=1, origin_country_id=2, destination_country_id=1, departure_time=2022-02-04 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-02-22 12:17:24,736:AirlineFacade:add_flight:9200:11112:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Origin country can't be the same to destination
+2022-02-22 12:17:25,374:AirlineFacade:update_flight:9200:11112:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Updating flight
+<Flight id=2, airline_company_id=2, origin_country_id=1, destination_country_id=2, departure_time=2022-02-03 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-02-22 12:17:26,076:AirlineFacade:remove_flight:9200:11112:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Removing my flights
+<Flight id=2, airline_company_id=2, origin_country_id=2, destination_country_id=1, departure_time=2022-02-04 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-02-22 12:17:26,715:AirlineFacade:remove_flight:9200:11112:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Flight must be a flight's instance
+2022-02-22 12:17:27,485:AirlineFacade:get_my_flights:9200:11112:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Getting my flights

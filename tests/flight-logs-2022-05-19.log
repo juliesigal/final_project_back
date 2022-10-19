@@ -1,0 +1,93 @@
+2022-05-19 19:23:54,818:AnonymousFacade:login:11456:3148:INFO:Administrator 1 just logged in
+2022-05-19 19:23:56,995:FacadeBase:create_new_user:11456:3148:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=2>
+2022-05-19 19:23:57,024:AdministratorFacade:add_airline:11456:3148:INFO:Creating new airline 
+<AirlineCompany_id=3, name=Canada Airline country_id=2, users_id=7>
+2022-05-19 19:23:57,908:AdministratorFacade:add_airline:11456:3148:ERROR:Airline with this name: Delta already exist!
+2022-05-19 19:23:58,741:FacadeBase:create_new_user:11456:3148:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=1>
+2022-05-19 19:23:58,750:AdministratorFacade:add_customer:11456:3148:INFO:Login token: 
+<LoginToken id=1, name=Diana role = Administrator >  creating new customer: 
+<Customer_id=3, first_name=Jane, last_name= Paris, address=Toronto, phone_num=888-666, credit_card_num=3477-222, users_id=7>
+2022-05-19 19:23:59,702:AdministratorFacade:add_customer:11456:3148:ERROR:Login token: 
+<LoginToken id=1, name=Diana role = Administrator > ,Customer with this user id: 1 number already exist
+2022-05-19 19:24:00,450:FacadeBase:create_new_user:11456:3148:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=3>
+2022-05-19 19:24:00,454:AdministratorFacade:add_administrator:11456:3148:INFO:Creating new administrator 
+<Administrator id=None, first_name=Jane last_name= Paris user_id=7>
+2022-05-19 19:24:01,411:AdministratorFacade:add_administrator:11456:3148:ERROR:Object None must be an administrator's instance
+2022-05-19 19:24:02,238:AdministratorFacade:remove_airline:11456:3148:INFO:Removing airline: 
+<AirlineCompany_id=2, name=USA airline country_id=2, users_id=2> and user of this airline: [
+<User id=2 username=DeadPool2 password=22345 email=dead2@pool.com, user_role_id=2>]
+2022-05-19 19:24:03,235:AdministratorFacade:remove_airline:11456:3148:ERROR:Object None must be an airline's instance
+2022-05-19 19:24:04,151:AdministratorFacade:remove_customer:11456:3148:INFO:Removing customer: 
+<Customer_id=2, first_name=Jane, last_name=Paris, address=Toronto, phone_num=876-554, credit_card_num=3477-2020, users_id=4> and his user: [
+<User id=4 username=DeadPool4 password=42345 email=dead4@pool.com, user_role_id=1>]
+2022-05-19 19:24:04,979:AdministratorFacade:remove_customer:11456:3148:ERROR:Object None must be a customer's instance
+2022-05-19 19:24:07,655:AdministratorFacade:remove_administrator:11456:3148:INFO:Removing administrator: 
+<Administrator id=2, first_name=Bob last_name=Dylan user_id=6> and his user: [
+<User id=6 username=DeadPool6 password=62345 email=dead6@pool.com, user_role_id=3>]
+2022-05-19 19:24:07,673:AnonymousFacade:login:11456:3148:INFO:Airline 2 just logged in
+2022-05-19 19:24:10,292:AirlineFacade:update_airline:11456:3148:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Updating airline
+<AirlineCompany_id=2, name=USA airline country_id=1, users_id=2>
+2022-05-19 19:24:13,108:AirlineFacade:update_airline:11456:3148:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Airline must be an airline's instance
+2022-05-19 19:24:15,635:AirlineFacade:update_airline:11456:3148:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Other airline(1)tried to update the parameters
+2022-05-19 19:24:18,667:AirlineFacade:update_airline:11456:3148:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :This name(Delta) is not unique!
+2022-05-19 19:24:22,128:AirlineFacade:add_flight:11456:3148:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Adding flight
+<Flight id=None, airline_company_id=1, origin_country_id=2, destination_country_id=1, departure_time=2022-02-04 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-05-19 19:24:24,885:AirlineFacade:add_flight:11456:3148:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Origin country can't be the same to destination
+2022-05-19 19:24:27,724:AirlineFacade:update_flight:11456:3148:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Updating flight
+<Flight id=2, airline_company_id=2, origin_country_id=1, destination_country_id=2, departure_time=2022-02-03 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-05-19 19:24:30,814:AirlineFacade:remove_flight:11456:3148:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Removing my flights
+<Flight id=2, airline_company_id=2, origin_country_id=2, destination_country_id=1, departure_time=2022-02-04 11:30:02, landing_time=2022-02-04 14:45:02, remaining_tickets=89>
+2022-05-19 19:24:35,116:AirlineFacade:remove_flight:11456:3148:ERROR:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > :Flight must be a flight's instance
+2022-05-19 19:24:38,335:AirlineFacade:get_my_flights:11456:3148:INFO:Login token: 
+<LoginToken id=2, name=USA airline role = Airline > : Getting my flights
+2022-05-19 19:24:41,592:AnonymousFacade:login:11456:3148:INFO:Customer 1 just logged in
+2022-05-19 19:24:44,957:AnonymousFacade:login:11456:3148:INFO:Airline 2 just logged in
+2022-05-19 19:24:48,068:AnonymousFacade:login:11456:3148:INFO:Administrator 1 just logged in
+2022-05-19 19:24:51,597:AnonymousFacade:login:11456:3148:ERROR:Username: dfgdgf or password: dfgdfg is wrong!!!
+2022-05-19 19:24:55,207:FacadeBase:create_new_user:11456:3148:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=2>
+2022-05-19 19:24:55,209:AnonymousFacade:add_customer:11456:3148:INFO:Adding customer
+<Customer_id=None, first_name=Jan, last_name= Pier, address=Paris, phone_num=324-567, credit_card_num=5326-1013, users_id=7>
+2022-05-19 19:24:59,027:AnonymousFacade:add_customer:11456:3148:ERROR:Phone number 876-554 must be unique!
+2022-05-19 19:25:02,776:AnonymousFacade:add_customer:11456:3148:ERROR: Object None must be instance of class customers!
+2022-05-19 19:25:36,319:AnonymousFacade:login:11456:3148:INFO:Customer 1 just logged in
+2022-05-19 19:25:41,502:CustomerFacade:add_ticket:11456:3148:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating remaining tickets for flight: 1
+2022-05-19 19:25:41,503:CustomerFacade:add_ticket:11456:3148:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Adding ticket 
+<Ticket id=None flight_id=1 customer_id=1>
+2022-05-19 19:25:45,444:CustomerFacade:add_ticket:11456:3148:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating remaining tickets for flight: 2
+2022-05-19 19:25:45,444:CustomerFacade:add_ticket:11456:3148:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Adding ticket 
+<Ticket id=None flight_id=2 customer_id=2>
+2022-05-19 19:25:48,926:CustomerFacade:add_ticket:11456:3148:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : try to add ticket with flight id that not exist
+2022-05-19 19:25:52,036:CustomerFacade:add_ticket:11456:3148:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : This unique constraint of customer id: 1 and flight id: 2 already exist
+2022-05-19 19:25:55,944:CustomerFacade:get_my_ticket:11456:3148:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Getting my tickets
+2022-05-19 19:25:59,694:CustomerFacade:remove_ticket:11456:3148:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Object must to be ticket instance!
+2022-05-19 19:26:03,277:CustomerFacade:update_customer:11456:3148:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating customer 
+<Customer_id=1, first_name=Dave, last_name=Green, address=New Jersey, phone_num=185-000, credit_card_num=4580-333, users_id=1>
+2022-05-19 19:26:06,779:CustomerFacade:update_customer:11456:3148:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > :Other customer 
+<Customer_id=2, first_name=Dave, last_name=Green, address=New Jersey, phone_num=185-000, credit_card_num=4580-333, users_id=1> tried to update the parameters
+2022-05-19 19:26:10,120:CustomerFacade:update_customer:11456:3148:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Credit card number 3477-2020 must be unique
+2022-05-19 19:26:13,995:CustomerFacade:get_my_ticket:11456:3148:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Getting my tickets

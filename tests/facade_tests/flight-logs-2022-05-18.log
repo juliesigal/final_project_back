@@ -1,0 +1,42 @@
+2022-05-18 11:38:07,468:AnonymousFacade:login:780:5340:ERROR:Username: DeadPool3 or password: 32345 is wrong!!!
+2022-05-18 11:38:07,915:AnonymousFacade:login:780:5340:ERROR:Username: DeadPool2 or password: 22345 is wrong!!!
+2022-05-18 11:38:09,458:AnonymousFacade:login:780:5340:INFO:Customer 1 just logged in
+2022-05-18 11:38:10,268:AnonymousFacade:login:780:5340:INFO:Airline 2 just logged in
+2022-05-18 11:38:11,096:AnonymousFacade:login:780:5340:INFO:Administrator 1 just logged in
+2022-05-18 11:38:11,952:AnonymousFacade:login:780:5340:ERROR:Username: dfgdgf or password: dfgdfg is wrong!!!
+2022-05-18 11:38:12,840:FacadeBase:create_new_user:780:5340:INFO:Creating new user: 
+<User id=None username=DeadPool7 password=72345 email=dead7@pool.com, user_role_id=2>
+2022-05-18 11:38:12,856:AnonymousFacade:add_customer:780:5340:INFO:Adding customer
+<Customer_id=None, first_name=Jan, last_name= Pier, address=Paris, phone_num=324-567, credit_card_num=5326-1013, users_id=7>
+2022-05-18 11:38:13,892:AnonymousFacade:add_customer:780:5340:ERROR:Phone number 876-554 must be unique!
+2022-05-18 11:38:15,137:AnonymousFacade:add_customer:780:5340:ERROR: Object None must be instance of class customers!
+2022-05-18 11:38:22,178:AnonymousFacade:login:780:5340:INFO:Customer 1 just logged in
+2022-05-18 11:38:22,945:CustomerFacade:add_ticket:780:5340:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating remaining tickets for flight: 1
+2022-05-18 11:38:22,945:CustomerFacade:add_ticket:780:5340:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Adding ticket 
+<Ticket id=None flight_id=1 customer_id=1>
+2022-05-18 11:38:23,633:CustomerFacade:add_ticket:780:5340:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating remaining tickets for flight: 2
+2022-05-18 11:38:23,633:CustomerFacade:add_ticket:780:5340:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Adding ticket 
+<Ticket id=None flight_id=2 customer_id=2>
+2022-05-18 11:38:24,484:CustomerFacade:add_ticket:780:5340:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : try to add ticket with flight id that not exist
+2022-05-18 11:38:25,183:CustomerFacade:add_ticket:780:5340:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : This unique constraint of customer id: 1 and flight id: 2 already exist
+2022-05-18 11:38:26,168:CustomerFacade:get_my_ticket:780:5340:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Getting my tickets
+2022-05-18 11:38:26,950:CustomerFacade:remove_ticket:780:5340:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Object must to be ticket instance!
+2022-05-18 11:38:27,944:CustomerFacade:update_customer:780:5340:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Updating customer 
+<Customer_id=1, first_name=Dave, last_name=Green, address=New Jersey, phone_num=185-000, credit_card_num=4580-333, users_id=1>
+2022-05-18 11:38:28,736:CustomerFacade:update_customer:780:5340:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > :Other customer 
+<Customer_id=2, first_name=Dave, last_name=Green, address=New Jersey, phone_num=185-000, credit_card_num=4580-333, users_id=1> tried to update the parameters
+2022-05-18 11:38:29,510:CustomerFacade:update_customer:780:5340:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Credit card number 3477-2020 must be unique
+2022-05-18 11:38:30,260:CustomerFacade:get_my_ticket:780:5340:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Getting my tickets
+2022-05-18 16:12:21,545:AnonymousFacade:login:364:8236:INFO:Administrator 1 just logged in

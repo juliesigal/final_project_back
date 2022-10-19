@@ -1,0 +1,43 @@
+2022-02-21 15:18:42,777:AnonymousFacade:login:14132:3948:INFO:Customer 1 just logged in
+2022-02-21 15:18:43,809:CustomerFacade:get_my_ticket:14132:3948:INFO:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Getting my tickets
+2022-02-21 15:19:09,487:AnonymousFacade:login:7084:7832:INFO:Customer 1 just logged in
+2022-02-21 15:20:29,962:AnonymousFacade:login:16616:4368:INFO:Customer 1 just logged in
+2022-02-21 15:20:30,559:CustomerFacade:remove_ticket:16616:4368:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Object must to be ticket instance!
+2022-02-21 15:21:35,397:AnonymousFacade:login:12488:13872:INFO:Customer 1 just logged in
+2022-02-21 15:21:36,057:CustomerFacade:remove_ticket:12488:13872:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Object must to be ticket instance!
+2022-02-21 16:19:03,514:AnonymousFacade:login:8884:1752:INFO:Customer 1 just logged in
+2022-02-21 16:19:04,118:CustomerFacade:update_customer:8884:1752:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > :Other customer 
+<Customer_id=2, first_name=Dave, last_name=Green, address=New Jersey, phone_num=185-000, credit_card_num=4580-333, users_id=1> tried to update the parameters
+2022-02-21 16:24:24,728:AnonymousFacade:login:568:16968:INFO:Customer 1 just logged in
+2022-02-21 16:24:25,449:CustomerFacade:update_customer:568:16968:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : Credit card number 3477-2020 must be unique
+2022-02-21 16:27:54,939:AnonymousFacade:login:17084:5480:INFO:Customer 1 just logged in
+2022-02-21 16:29:51,006:AnonymousFacade:login:3676:4500:INFO:Customer 1 just logged in
+2022-02-21 16:32:54,889:AnonymousFacade:login:7212:11772:INFO:Customer 1 just logged in
+2022-02-21 16:32:55,517:CustomerFacade:add_ticket:7212:11772:ERROR:Login token: 
+<LoginToken id=1, name=Dave role = Customer > : This unique constraint of customer id: 1 and flight id: 2 already exist
+2022-02-21 16:46:52,605:AnonymousFacade:add_customer:16232:4440:ERROR: Object None must be instance of class customers!
+2022-02-21 16:50:22,004:AnonymousFacade:add_customer:10228:8764:ERROR:Phone number 876-554 must be unique!
+2022-02-21 16:57:38,744:AnonymousFacade:login:8852:13600:INFO:Administrator 1 just logged in
+2022-02-21 16:59:01,926:AnonymousFacade:login:16376:11020:INFO:Administrator 1 just logged in
+2022-02-21 16:59:02,526:AdministratorFacade:add_airline:16376:11020:ERROR:Airline with this name: Delta already exist!
+2022-02-21 17:00:53,512:AnonymousFacade:login:2908:3236:INFO:Administrator 1 just logged in
+2022-02-21 17:00:54,350:AdministratorFacade:add_airline:2908:3236:ERROR:The login_token '
+<LoginToken id=1, name=Diana role = Administrator > ' tried to use the function 'add_airline but the user '
+<Customer_id=None, first_name=Jane, last_name= Paris, address=Toronto, phone_num=888-666, credit_card_num=3477-222, users_id=1>' that was sent is not an Airline's object
+2022-02-21 17:01:28,172:AnonymousFacade:login:8584:15700:INFO:Administrator 1 just logged in
+2022-02-21 17:01:28,779:AdministratorFacade:add_customer:8584:15700:ERROR:Login token: 
+<LoginToken id=1, name=Diana role = Administrator > ,Customer with this user id: 1 number already exist
+2022-02-21 17:02:39,581:AnonymousFacade:login:1500:1480:INFO:Administrator 1 just logged in
+2022-02-21 17:02:40,356:AdministratorFacade:add_customer:1500:1480:ERROR:Login token: 
+<LoginToken id=1, name=Diana role = Administrator > ,Customer with this user id: 1 number already exist
+2022-02-21 17:08:51,588:AnonymousFacade:login:16276:924:INFO:Administrator 1 just logged in
+2022-02-21 17:08:52,265:AdministratorFacade:add_administrator:16276:924:ERROR:Object None must be an administrator's instance
+2022-02-21 17:10:44,748:AnonymousFacade:login:14652:15200:INFO:Administrator 1 just logged in
+2022-02-21 17:10:45,432:AdministratorFacade:remove_airline:14652:15200:ERROR:Object None must be an airline's instance
+2022-02-21 17:12:07,872:AnonymousFacade:login:5716:272:INFO:Administrator 1 just logged in
+2022-02-21 17:12:08,583:AdministratorFacade:remove_customer:5716:272:ERROR:Object None must be a customer's instance
